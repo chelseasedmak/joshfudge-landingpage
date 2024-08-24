@@ -13,7 +13,7 @@ body {
 #nav {
     display: flex;
     flex-direction: row;
-    padding: 40px;
+    padding: 0px 88px;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
@@ -38,5 +38,133 @@ a {
     margin-right: 16px;
     color: orange;
     font-size: 1.1em;
+}
 
+a:hover {
+    color: purple;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    color: #FF7F32;
+    font-size: 2.8em;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 25%;
+    margin: 12px;
+}
+
+.listen-btn {
+    color: #FF7F32;
+    font-size: 1.2em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    border: 2px solid #FF7F32;
+    background-color: #F2DF98;
+    box-shadow: 0px 4px 4px 0px #00000010;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.more-music-btn {
+    color: #FF7F32;
+    font-size: 1.2em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    border: 2px solid #FF7F32;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px 0px #00000010;
+    padding: 12px 20px;
+}
+
+.listen-btn:hover,
+.more-music-btn:hover {
+    background-color: #fff0b250;
+    color: #FF7F32;
+    box-shadow: none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: 1px solid orange;
+    font-style: italic;
+    transition: border-left-color 0.1s linear 0s, border-top-color 0.1s linear 0.07s, border-right-color 0.1s linear 0.14s;
+}
+
+.more-music-btn:hover {
+    background-color: transparent;
+
+}
+
+
+.header-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.spotify,
+.apple-music,
+.amazon-music,
+.soundcloud {
+    background: transparent;
+    border: none;
+}
+
+.music-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.music-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 156px;
+    margin-right: 750px;
+}
+
+.tiktok,
+.youtube,
+.instagram,
+.twitter {
+    background: transparent;
+    border: none;
+    width: 42px;
+    height: 42px;
+}
+
+.tiktok:hover,
+.youtube:hover,
+.instagram:hover,
+.twitter:hover {
+    background-color: #EFE7E3;
+    border-radius: 6px;
+    padding: 8px 8px 8px 8px;
+}
+
+.twitter:hover {
+    padding: 8px 8px 4px 8px;
+}
+
+.header-social-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    top: 84px;
+    margin-left: 750px;
 }
