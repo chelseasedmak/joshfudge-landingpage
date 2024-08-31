@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Josh Fudge</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="https://fonts.googleapis.com">
     <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
@@ -66,14 +66,72 @@
         </div>
     </section>
 
-    <section id="tour">
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tour Dates</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <section id="tour">
+            <div class="tour-container">
+                <div class="tour-header">
+                    <div class="tour-line"></div>
+                    <div class="tour-header-text">Tour</div>
+                    <div class="tour-line"></div>
+                </div>
+                <div class="tour-info-container" id="tour-info-container">
+                </div>
+                <div class="new-events">
+                    <div class="new-events-text">Don't Miss Out On New Events In Your Area</div>
+                    <button class="follow-btn"> Follow Josh Fudge </button>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const tours = [
+                { date: "February 16, 2024", event: "Culture Room w/ Ripe", location: "Fort Lauderdale, United States" },
+                { date: "February 17, 2024", event: "Revolution Live w/ Ripe", location: "Miami, United States" },
+                { date: "February 18, 2024", event: "House of Blues", location: "Orlando, United States" },
+                { date: "February 19, 2024", event: "Jannus Live", location: "St. Petersburg, United States" },
+            ];
+
+            const tourContainer = document.getElementById('tour-info-container');
+
+            tours.forEach(tour => {
+                const tourInfo = document.createElement('div');
+                tourInfo.className = 'tour-info';
+
+                tourInfo.innerHTML = `
+            <div class="date-event">
+                <div class="date">${tour.date}</div>
+                <div class="event">${tour.event}</div>
+            </div>
+            <div class="location">${tour.location}</div>
+            <button class="tickets">Get Tickets</button>
+        `;
+
+                tourContainer.appendChild(tourInfo);
+            });
+        </script>
+
+    </body>
+
+    </html>
+
+    <!-- <section id="tour">
         <div class="tour-container">
             <div class="tour-header">
                 <div class="tour-line"></div>
                 <div class="tour-header-text">Tour</div>
                 <div class="tour-line"></div>
             </div>
-
+            
             <div class="tour-info">
                 <div class="date-event">
                     <div class="date">February 16, 2024</div>
@@ -135,13 +193,14 @@
                 </button>
             </div>
 
-
-            <div class="new-events">
-                <div class="new-events-text">Don't Miss Out On New Events In Your Area</div>
-                <button class="follow-btn"> Follow Josh Fudge </button>
-            </div>
-        </div>
+    <div class="new-events">
+        <div class="new-events-text">Don't Miss Out On New Events In Your Area</div>
+        <button class="follow-btn"> Follow Josh Fudge </button>
+    </div>
+    </div>
     </section>
+
+-->
 
     <section id="video">
         <div class="video-container">
