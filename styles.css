@@ -11,6 +11,7 @@ body {
     background-color: #F0E7E2;
     background-image: url(images/Group\ 6\ \(3\).png);
     background-size: cover;
+    background-position: center;
 }
 
 /*Navigation*/
@@ -33,7 +34,6 @@ body {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
 }
 
 a {
@@ -47,6 +47,26 @@ a {
 a:hover {
     color: purple;
 }
+
+@media screen and (max-width: 600px) {
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .nav-links {
+        margin-top: -12px;
+        margin-bottom: 36px;
+    }
+}
+
 
 /*Hero*/
 #hero {
@@ -178,6 +198,107 @@ h1 {
     margin-left: 750px;
 }
 
+
+
+
+@media screen and (max-width: 1200px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+        margin-bottom: 375px;
+
+    }
+
+    .music-cta,
+    .more-music-btn,
+    .listen-btn {
+        position: static;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listen-btn {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .header-btns,
+    .music-btns {
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .header-social-btns {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3.4em;
+        line-height: 0%;
+    }
+
+    .heading {
+        margin-top: 88px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+        margin-bottom: 36px;
+
+    }
+
+    .music-cta,
+    .more-music-btn,
+    .listen-btn {
+        position: static;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listen-btn {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .header-btns,
+    .music-btns {
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .header-social-btns {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3em;
+        line-height: 0%;
+    }
+
+    .heading {
+        margin-top: 102px;
+    }
+}
+
 /*Tour + Some Video*/
 .tour-header,
 .video-header {
@@ -305,6 +426,99 @@ h1 {
     background-size: cover;
 }
 
+@media screen and (max-width: 1200px) {
+    .tour-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 5%;
+        margin-top: -300px;
+        background-image: none;
+    }
+
+    .tour-info,
+    .tour-info-last {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        padding-bottom: 36px;
+        margin-bottom: 36px;
+    }
+
+    .date-event {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date,
+    .location {
+        font-size: 1.4em;
+    }
+
+    .event {
+        font-size: 1.1em;
+    }
+
+    .tickets {
+        margin-top: 16px;
+    }
+
+    .new-events {
+        text-align: center;
+        padding: 16px;
+        font-size: .9em;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .tour-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 5%;
+        background-image: none;
+    }
+
+    .tour-info,
+    .tour-info-last {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding-bottom: 36px;
+        margin-bottom: 36px;
+    }
+
+    .date-event {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .date,
+    .location {
+        font-size: 1.6em;
+    }
+
+    .event {
+        font-size: 1.4em;
+    }
+
+    .tickets {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .new-events {
+        text-align: center;
+        padding: 16px;
+        font-size: .8em;
+    }
+}
+
+
+
 /*Pattern BG*/
 .background-div {
     background-image: url('images/bg-pattern.png');
@@ -319,7 +533,6 @@ h1 {
 #video {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -328,8 +541,6 @@ h1 {
     margin-top: 112px;
     position: relative;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
     gap: 16px;
 }
 
@@ -348,18 +559,54 @@ h1 {
     border: 1px solid #06675F;
 }
 
+.video-header {
+    display: flex;
+    flex-direction: row;
+}
+
 .video-title {
     font-size: 1.5em;
     color: #06675F;
-    margin-top: -96px;
+    margin-top: 16px;
     margin-bottom: 96px;
+    width: 100%;
     font-weight: 500;
     font-style: italic;
     text-align: center;
     background-color: #06675F10;
     border: 2px solid #06675F;
-    padding: 10px;
+    padding: 10px 0px;
 
+}
+
+@media screen and (max-width: 1200px) {
+
+    .video-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .video-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .video-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .video-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /*Newsletter*/
@@ -405,6 +652,11 @@ input::placeholder {
     padding: 6px 20px;
 }
 
+.submit:hover {
+    border: 2px solid #284385;
+    color: #284385;
+}
+
 input {
     color: #06675F;
     font-size: .8em;
@@ -416,6 +668,17 @@ input {
     box-shadow: 0px 4px 4px 0px #00000010;
     padding: 8px 12px;
     width: 675px;
+}
+
+input:hover {
+    border: 2px solid #284385;
+    color: #284385;
+}
+
+input:focus {
+    border: 2px solid #284385;
+    outline: none;
+    color: #284385;
 }
 
 form {
@@ -436,6 +699,68 @@ form {
     align-items: center;
     margin-top: -56px;
 }
+
+@media screen and (max-width: 1200px) {
+    .newsletter-header {
+        font-size: 2em;
+    }
+
+    .newsletter-subheading {
+        text-align: center;
+    }
+
+    input {
+        width: 375px;
+    }
+
+    .newsletter-container {
+        padding: 0px;
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    #newsletter-form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .newsletter-header {
+        font-size: 2.0em;
+        margin-bottom: 16px;
+    }
+
+    .newsletter-subheading {
+        display: none;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .newsletter-container {
+        padding: 0px;
+        width: 100%;
+        padding: 24px 16px;
+
+    }
+
+    #newsletter-form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
 
 /*Footer*/
 .footer-links-column {
@@ -472,10 +797,10 @@ footer {
     align-content: center;
     align-items: center;
     border: 2px solid #284385;
-    margin: -56px;
-    padding: 0px 102px;
-}
+    margin: 0 auto;
+    margin-top: -56px;
 
+}
 
 
 .footer-middle,
@@ -484,7 +809,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 56px 64px;
+
 }
 
 .footer-left {
@@ -492,4 +817,61 @@ footer {
     flex-direction: row;
     gap: 32px;
     align-items: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-left {
+        display: none;
+    }
+
+    .footer-middle,
+    .footer-right {
+        text-align: center;
+        padding-bottom: 88px;
+    }
+
+    .footer-middle {
+        margin-top: -100px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-left {
+        display: none;
+    }
+
+    .footer-middle,
+    .footer-right {
+        text-align: center;
+        padding-bottom: 96px;
+    }
+
+    .footer-middle {
+        margin-top: -100px;
+    }
+
+
 }
