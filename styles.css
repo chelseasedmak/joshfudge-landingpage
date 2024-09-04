@@ -133,7 +133,6 @@ h1 {
 
 }
 
-
 .header-btns {
     display: flex;
     flex-direction: row;
@@ -166,29 +165,6 @@ h1 {
     margin-right: 750px;
 }
 
-.tiktok,
-.youtube,
-.instagram,
-.twitter {
-    background: transparent;
-    border: none;
-    width: 42px;
-    height: 42px;
-}
-
-.tiktok:hover,
-.youtube:hover,
-.instagram:hover,
-.twitter:hover {
-    background-color: #EFE7E3;
-    border-radius: 6px;
-    padding: 8px 8px 8px 8px;
-}
-
-.twitter:hover {
-    padding: 8px 8px 4px 8px;
-}
-
 .header-social-btns {
     display: flex;
     flex-direction: column;
@@ -197,9 +173,6 @@ h1 {
     top: 84px;
     margin-left: 750px;
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
     #hero {
@@ -470,7 +443,6 @@ h1 {
     }
 }
 
-
 @media screen and (max-width: 600px) {
     .tour-container {
         display: flex;
@@ -518,7 +490,6 @@ h1 {
 }
 
 
-
 /*Pattern BG*/
 .background-div {
     background-image: url('images/bg-pattern.png');
@@ -528,6 +499,7 @@ h1 {
     z-index: 1;
     padding-top: 400px;
 }
+
 
 /*Video*/
 #video {
@@ -608,6 +580,7 @@ h1 {
         align-items: center;
     }
 }
+
 
 /*Newsletter*/
 #newsletter-form {
@@ -729,7 +702,6 @@ form {
     }
 }
 
-
 @media screen and (max-width: 600px) {
     .newsletter-header {
         font-size: 2.0em;
@@ -781,27 +753,30 @@ footer ul li a {
 .copyright {
     color: #28438F;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .footer-social-btns {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    padding-left: 24px;
 }
 
-footer {
+
+.footer-container {
     background-color: #EFE7E3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    border: 2px solid #284385;
+    border-top: 2px solid #284385;
     margin: 0 auto;
     margin-top: -56px;
+    padding: 36px;
 
 }
-
 
 .footer-middle,
 .footer-right {
@@ -819,9 +794,8 @@ footer {
     align-items: center;
 }
 
-
 @media screen and (max-width: 1200px) {
-    footer {
+    .footer-container {
         display: flex;
         flex-direction: column-reverse;
         margin: 0 auto;
@@ -844,12 +818,10 @@ footer {
     .footer-middle {
         margin-top: -100px;
     }
-
-
 }
 
 @media screen and (max-width: 600px) {
-    footer {
+    .footer-container {
         display: flex;
         flex-direction: column-reverse;
         margin: 0 auto;
@@ -872,6 +844,4 @@ footer {
     .footer-middle {
         margin-top: -100px;
     }
-
-
 }
