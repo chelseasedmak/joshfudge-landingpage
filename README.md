@@ -1,3 +1,3 @@
 # joshfudge-landingpage
 
-This landing page is one of the first website designs I ever put together, and I really wanted to try coding it myself. The layout was a bit tricky at times, but I enjoyed the challenge! Each step taught me more about HTML and CSS, and I loved figuring out how to turn my design ideas into actual code. Even with the bumps along the way, it was a fun experience that sparked my passion for web development and making cool stuff online.
+This landing page is one of the first website designs I ever put together, and I really wanted to try coding it myself. The layout was a bit tricky at times, but I enjoyed the challenge! Each step taught me more about HTML and CSS, and I loved figuring out how to turn my design ideas into actual code. Even with the bumps along the way, it was a fun experience translating one of my designs into code. 
